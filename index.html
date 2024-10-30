@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Repair Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <!-- Dark Mode Toggle Button -->
+<nav>
+    <div class="container">
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+      <!-- Add the dark mode toggle button -->
+      <button id="theme-toggle">Dark Mode</button>
+    </div>
+  </nav>
+  
+
+  <!-- Header Section -->
+  <header id="home">
+    <div class="container">
+      <img src="https://static.vecteezy.com/system/resources/previews/008/459/669/non_2x/phone-service-logo-design-template-mobile-service-logo-element-vector.jpg" alt="Phone Repair Service Logo" class="logo">
+      <h1>Phone Repair Service</h1>
+      <p>Your one-stop solution for phone repairs</p> <br> <br>
+      <button onclick="scrollToContact()">Contact Us</button>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service">
+          <img src="https://www.fixnow.be/wp-content/uploads/2023/12/iPhone-15-Pro-Scherm-vervangen-585x1024.webp" alt="Screen Replacement" class="service-img">
+          <h3>Screen Replacement</h3>
+          <p>We replace cracked or broken screens with high-quality components.</p>
+        </div>
+        <div class="service">
+          <img src="https://cdn.wccftech.com/wp-content/uploads/2023/09/iPhone-15-Pro-teardown.jpg" alt="Battery Replacement" class="service-img">
+          <h3>Battery Replacement</h3>
+          <p>Get your phone’s battery replaced for longer-lasting performance.</p>
+        </div>
+        <div class="service">
+          <img src="https://i.ytimg.com/vi/ZuCAT28RDwI/maxresdefault.jpg" alt="Water Damage Repair" class="service-img">
+          <h3>Water Damage Repair</h3>
+          <p>Accidentally dropped your phone in water? We’ve got you covered!</p>
+        </div>
+        <div class="service">
+          <img src="https://s.yimg.com/ny/api/res/1.2/DghdtRg8yVJA0whyVPrtKA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM4NA--/https://s.yimg.com/os/creatr-uploaded-images/2023-09/18d826e0-5987-11ee-bf3f-dbcf4e738442" alt="Software Issues" class="service-img">
+          <h3>Software Issues</h3>
+          <p>Fix bugs, install updates, and optimize your phone's software.</p>
+        </div>
+        <div class="service">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDKavhCIIxpC0fm8VGHaw_hi_f-LrDR_I18Q&s" alt="Software Issues" class="service-img">
+          <h3>Face ID Repair</h3>
+          <p>Fix your face id after water damage or fall.</p>
+        </div>
+      </div>
+    </div>
+  </section> <br><br><br>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a leading phone repair service with over 10 years of experience in fixing all types of mobile devices. Our mission is to provide high-quality repairs and exceptional customer service. Whether you have a cracked screen or a phone that won’t turn on, we’re here to help!</p>
+    </div>
+  </section> <br><br>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="How can we help you?" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formResponse" class="response-message"></p>
+    </div>
+  </section>
+
+  <!-- Location Section with Map -->
+  <section id="location">
+    <div class="container">
+      <h2>Our Location</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23838.279502839804!2d71.64528538277983!3d40.9928394630151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDU5JzM0LjIiTiA3McKwMzknNTUuMCJF!5e0!3m2!1sen!2sus!4v1634673683823!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <marquee behavior="1" direction="right"><ion-icon name="airplane"></ion-icon></marquee> <br> <br>
+
+      <ion-icon name="logo-instagram"></ion-icon><ion-icon name="paper-plane"></ion-icon><ion-icon name="logo-youtube"></ion-icon><ion-icon name="logo-twitter"></ion-icon><ion-icon name="logo-vk"></ion-icon><ion-icon name="call"></ion-icon> <br> <br>
+      <p>© 2024 Phone Repair Service |Amir Kabirov</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
